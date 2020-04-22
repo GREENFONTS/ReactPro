@@ -4,31 +4,29 @@ import Home from './component/Home.js'
 import Resume from './component/Resume.js'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-const App = (props) => {
-  
+function App() {
+
   return (
-    
-      <Router>
-     
+
+    <Router>
+
       <div>
         <Nav />
         <Switch>
-          <Route path="/" component={Home} />
+          <Route path="/" exact component={Home} />
           <Route path="/resume" component={Resume} />
         </Switch>
-      </div>     
-      </Router>
-             
+      </div>
+    </Router>
 
-     
-     
 
-   
-   
+
+
+
+
+
 
   )
 
 }
 export default App;
-
-

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Resume() {
+const Resume = () => {
     
     return (
         <div>
@@ -13,7 +13,7 @@ function Resume() {
 }
                 
 
-function Myself(){
+const Myself = () =>{
                     
     return (
                 
@@ -36,7 +36,7 @@ function Myself(){
     )
 }
 
-function Skill() {
+ const Skill = () =>{
     
     return (
         
@@ -93,7 +93,7 @@ function Skill() {
 }
 
 
-function Qualification() {
+const Resume = () => {
     
     return (
         

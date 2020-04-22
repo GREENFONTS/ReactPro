@@ -4,7 +4,7 @@ import Home from './component/Home.js'
 import Resume from './component/Resume.js'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-function App() {
+const App = (props) => {
   
   return (
     

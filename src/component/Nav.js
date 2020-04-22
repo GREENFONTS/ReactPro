@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css'
 
-function Nav() {
+const Nav = () => {
     
     return(
             <div className=" container-fluid bg-info">

@@ -10,7 +10,7 @@ const Home = () => {
                     <div className="container-fluid">
                         <h1>A FreeLancer Developer</h1>
                         <p>U Think, We Develop</p>
-                        <p><a href="./resume.html" class="btn btn-primary btn-lg" role="button"> Resume</a> </p>
+                        <p><a href="./Resume" class="btn btn-primary btn-lg" role="button"> Resume</a> </p>
                     </div>
 
                 </div>

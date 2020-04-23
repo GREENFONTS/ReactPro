@@ -1,13 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../App.css'
+
 
 function Nav() {
-
+    const navStyle = {
+        color: 'white',
+    }
+    
     return (
         <div className=" container-fluid bg-info">
             <nav className="navbar navbar-expand-lg  navbar-light" id="nav">
-                <a className="navbar-brand pull-right" href="#" id="name">GREENFONTS</a>
+                <a className="navbar-brand pull-right" href="/Home" id="name">GREENFONTS</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -16,28 +19,28 @@ function Nav() {
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav  mr-auto " id="nav-list">
-                        <Link to="/">
-                            <li className="nav-item active">
+                        <Link style={navStyle} to="/">
+                            <li className="nav-item active" id="nav-links">
                                 HOME
 </li>
                         </Link>
-                        <Link to="/Resume">
-                            <li className="nav-item active">
-                                Resume
+                        <Link style={navStyle} to="/Resume">
+                            <li className="nav-item active" id="nav-links">
+                                RESUME
 </li>
                         </Link>
-                        <Link to="/Service">
-                            <li className="nav-item active">
+                        <Link style={navStyle} to="/Services">
+                            <li className="nav-item active" id="nav-links">
                                 SERVICES
 </li>
                         </Link>
-                        <Link to="/Blog">
-                            <li className="nav-item active">
+                        <Link style={navStyle} to="/Blog">
+                            <li className="nav-item active" id="nav-links">
                                 BLOG
 </li>
                         </Link>
-                        <Link to="/Contact">
-                            <li className="nav-item active">
+                        <Link style={navStyle} to="/Contact">
+                            <li className="nav-item active" id="nav-links">
                                 CONTACT
 </li>
                         </Link>

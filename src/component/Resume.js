@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Footer } from './Contact.js'
 const Resume = () => {
     
     return (
@@ -7,6 +7,7 @@ const Resume = () => {
             <Myself />
             <Skill />
             <Qualification />
+            <Footer />
         </React.Fragment>   
                          
     )
@@ -17,12 +18,12 @@ const Myself = () =>{
                     
     return (
                 
-        <div className="container" id="body" >
-            <img src="http://pluspng.com/img-png/png-men-men-png-495.png" alt="error" class="img-rounded" />
+        <div className="container-fluid mb-5 pb-5" id="body" >
+            <img src="http://pluspng.com/img-png/png-men-men-png-495.png" alt="error" className="img-rounded" />
             <span>
-                <div class="jumbotron" id="label1">
-                    <div class="container">
-                        <h1>RESUME</h1>
+                <div className="jumbotron mr-1 mb-0 " id="label1">
+                    <div className="container">
+                        <h1 className="text-center">RESUME</h1>
                         <p> <b>Name:</b> Godwill Onyewuchi </p>
                         <p><b >Date of Birth:</b> January 01, 1987 </p>
                         <p><b >Address:</b> Futo Owerri, Imo Nigeria </p>
@@ -36,56 +37,56 @@ const Myself = () =>{
     )
 }
 
- const Skill = () =>{
+const Skill = () => {
     
     return (
         
-        <div class="container-fluid"  id="skills">
-            <h1>My Skills</h1>
-            <p>Far far away, behind the word mountains,
+        <div className="container p-3"  id="skills">
+            <h1 className="text-center">My Skills</h1>
+            <p className="text-center">Far far away, behind the word mountains,
             far from the countries Vokalia and Consonantia</p>
             <div>
 
                 <p>Photoshop 90%</p>
             </div>
-            <div class="progress progress-striped ">
-                <div class="progress-bar progress-bar-success" role="progressbar"
-                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style={{ width: '90 %' }}>
+            <div className="progress  ">
+                <div className="progress-bar " role="progressbar" aria-valuenow="60"
+                    aria-valuemin="0" aria-valuemax="100" style={{ width: "90%" }}>
                 </div>
             </div>
 
             <p>jQuery 85%</p>
-            <div class="progress">
-                <div class="progress-bar " role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                    aria-valuemax="100" style={{ width: '15 %', backgroundColor: 'blue'  }}>
+            <div className="progress">
+                <div className="progress-bar " role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                    aria-valuemax="100" style={{ width: "85%" }}>
                 </div>
             </div>
 
             <p>HTML5 95%</p>
-            <div class="progress">
-                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                    aria-valuemax="100" style={{ width: '95 %' } }>
+            <div className="progress">
+                <div className="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                    aria-valuemax="100" style={{ width: "95%" }}>
                 </div>
             </div>
 
             <p>CSS3 90%</p>
-            <div class="progress">
-                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                    aria-valuemax="100" style={{ width: '90 %' }}>
+            <div className="progress">
+                <div className="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                    aria-valuemax="100" style={{ width: '90%' }}>
                 </div>
             </div>
 
             <p>WordPress 70%</p>
-            <div class="progress">
-                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                    aria-valuemax="100" style={{ width: '70 %' } }>
+            <div className="progress">
+                <div className="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                    aria-valuemax="100" style={{ width: '70%' } }>
                 </div>
             </div>
 
             <p>SEO 80%</p>
-            <div class="progress">
-                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                    aria-valuemax="100" style={{ width: '80 %' }}>
+            <div className="progress">
+                <div className="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                    aria-valuemax="100" style={{ width: '80%' }}>
                 </div>
             </div>
         </div>
@@ -98,19 +99,19 @@ const Qualification = () => {
     
     return (
         
-        <div class="container-fluid" id="Resume">
-            <h1>QUALIFICATIONS</h1>
-            <h2>A small river named Duden flows by their place and
-            supplies it with the necessary regalia. It is the paradisematic country,
+        <div className="container-fluid pt-5" id="Resume">
+            <h1 className="text-center p-1">QUALIFICATIONS</h1>
+            <h2 className="text-center p-1">A small river named Duden flows by their place and
+            supplies it with the necessary regalia. <br/>It is the paradisematic country,
             in which roasted part of sentences flow into your mouth </h2>
 
-            <span>
-                <div class="jumbotron" id="award">
-                    <div class="container">
-                        <p>2014-2015</p>
-                        <h3>Master Degree of Design</h3>
-                        <h4>CAMBRIDGE UNIVERSITY</h4>
-                        <h5>A smalll river named Duden flows by their place and supplies it with the necessary 
+            <span className="ml-lg-5  ">
+                <div className=" jumbotron mr-3 mt-2 d-md-inline-block" id="award">
+                    <div className="container-fluid">
+                        <p className="pt-4 pb-1 m-1">2014-2015</p>
+                        <h3 className="p-1 m-1">Master Degree of Design</h3>
+                        <h4 className="p-1 m-1">CAMBRIDGE UNIVERSITY</h4>
+                        <h5 className="p-2 m-1">A smalll river named Duden flows by their place and supplies it with the necessary 
                         regalia.It is the paradisematic country, in which roasted part of sentences flow 
                         into your mouth.</h5>
                     </div>
@@ -118,12 +119,12 @@ const Qualification = () => {
             </span>
 
             <span>
-                <div class="jumbotron" id="award">
-                    <div class="container" >
-                        <p>2014-2015</p>
-                        <h3>Art  Creative Design</h3>
-                        <h4>CAMBRIDGE UNIVERSITY</h4>
-                        <h5>A smalll river named Duden flows by their place and
+                <div className="jumbotron mr-3 mt-2 d-md-inline-block" id="award">
+                    <div className="container-fluid" >
+                        <p className="pt-4 pb-1 m-1">2014-2015</p>
+                        <h3 className="p-1 m-1">Art  Creative Design</h3>
+                        <h4 className="p-1 m-1">CAMBRIDGE UNIVERSITY</h4>
+                        <h5 className="p-2 m-1">A smalll river named Duden flows by their place and
                         supplies it with the necessary regalia. It is the paradisematic country, 
                         in which roasted part of sentences flow into your mouth</h5>
                     </div>
@@ -131,20 +132,21 @@ const Qualification = () => {
             </span>
             <span>
 
-                <div class="jumbotron" id="award">
-                    <div class="container">
-                        <p>2014-2015</p>
-                        <h3>Bachelor Degree of CA</h3>
-                        <h4>CAMBRIDGE UNIVERSITY</h4>
-                        <h5>A smalll river named Duden flows by their place and supplies<br /> 
+                <div className="jumbotron mr-3 mt-2 d-md-inline-block" id="award">
+                    <div className="container-fluid">
+                        <p className="pt-4 pb-1 m-1">2014-2015</p>
+                        <h3 className="p-1 m-1">Bachelor Degree of CA</h3>
+                        <h4 className="p-1 m-1">CAMBRIDGE UNIVERSITY</h4>
+                        <h5 className="p-2 m-1">A smalll river named Duden flows by their place and supplies<br /> 
                         it with the necessary regalia. It is the paradisematic country, <br />
                         in which roasted part of sentences flow into your mouth</h5>
                     </div>
                 </div>
             </span>
 
-            <div class="btn btn-defualt" id="CVbutton" >
-                <p ><b>DOWNLOAD CV</b></p>
+            <div className="btn btn-info  d-flex  mb-3 mt-0 pb-0 mr-auto ml-auto" id="CVbutton" >
+                <p className="text-dark"><b>DOWNLOAD CV</b></p>
+
             </div>
         </div>
     )

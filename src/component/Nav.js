@@ -5,44 +5,46 @@ import { Link } from 'react-router-dom';
 function Nav() {
     const navStyle = {
         color: 'white',
+        borderBottom: "none"
+        
     }
     
     return (
-        <div className=" container-fluid bg-info">
-            <nav className="navbar navbar-expand-lg  navbar-light" id="nav">
-                <a className="navbar-brand pull-right" href="/Home" id="name">GREENFONTS</a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
+            <div className="container-fluid p-0">
+                <nav className="navbar navbar-expand-lg  bg-info navbar-light p-2 m-0 p-lg-1" id="nav">
+                    <a className="navbar-brand mr-lg-5 pr-5" href="#" id="name">GREENFONTS</a>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
 
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav  mr-auto " id="nav-list">
+                <div className="collapse navbar-collapse d-flex ml-lg-5 pull-right-lg" id="navbarSupportedContent">
+                    <ul className="navbar-nav ml-lg-5 mr-lg-1" id="nav-list">
                         <Link style={navStyle} to="/">
-                            <li className="nav-item active" id="nav-links">
+                            <li className="nav-item active mr-lg-5" id="nav-links">
                                 HOME
-</li>
+                            </li>
                         </Link>
                         <Link style={navStyle} to="/Resume">
-                            <li className="nav-item active" id="nav-links">
+                            <li className="nav-item active mr-lg-5" id="nav-links">
                                 RESUME
-</li>
+                                </li>
                         </Link>
                         <Link style={navStyle} to="/Services">
-                            <li className="nav-item active" id="nav-links">
+                            <li className="nav-item active mr-lg-5" id="nav-links">
                                 SERVICES
-</li>
+                                </li>
                         </Link>
                         <Link style={navStyle} to="/Blog">
-                            <li className="nav-item active" id="nav-links">
+                            <li className="nav-item active mr-lg-5" id="nav-links">
                                 BLOG
-</li>
+                                </li>
                         </Link>
                         <Link style={navStyle} to="/Contact">
-                            <li className="nav-item active" id="nav-links">
+                            <li className="nav-item active mr-lg-5" id="nav-links">
                                 CONTACT
-</li>
+                                </li>
                         </Link>
 
                     </ul>
